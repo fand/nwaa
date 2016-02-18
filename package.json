@@ -1,0 +1,50 @@
+{
+  "name": "nwaa",
+  "version": "0.0.0",
+  "author": "fand",
+  "description": "nwaa",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fand/nwaa.git"
+  },
+  "keywords": [
+    "audio",
+    "sound",
+    "music",
+    "web audio",
+    "web audio api",
+    "dsp"
+  ],
+  "dependencies": {
+    "async": "0.9.x",
+    "underscore": "1.8.x",
+    "pcm-boilerplate": "0.1.x",
+    "audiobuffer": "0.2.x",
+    "av": "0.4.x",
+    "mp3": "0.1.x",
+    "flac": "0.3.x",
+    "alac": "0.1.x",
+    "aac": "0.1.x"
+  },
+  "analyze": false,
+  "devDependencies": {
+    "chai": "1.7.x",
+    "gulp": "3.8.x",
+    "gulp-contribs": "0.0.x",
+    "gulp-es6-transpiler": "1.0.x",
+    "gulp-util": "3.0.x",
+    "mocha": "*",
+    "speaker": "^0.2.6"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "scripts": {
+    "pretest": "gulp",
+    "test": "mocha",
+    "test-speaker": "node test/manual-testing/AudioContext-sound-output.js",
+    "prepublish": "gulp",
+    "postinstall": "gulp"
+  }
+}
